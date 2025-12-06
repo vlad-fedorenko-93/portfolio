@@ -1,0 +1,60 @@
+# Mobile Banking App
+
+## Overview
+
+The Mobile Banking App project aimed to revolutionize the way users interact with their finances on mobile devices. Through extensive user research and iterative design, we created an intuitive, secure, and delightful banking experience.
+
+## Challenge
+
+Traditional banking apps often suffer from:
+- Complex navigation structures
+- Overwhelming information density
+- Poor accessibility
+- Lack of personalization
+
+## Solution
+
+Our design approach focused on:
+
+### 1. Simplified Navigation
+We implemented a bottom navigation bar with only the most essential features, reducing cognitive load and improving discoverability.
+
+### 2. Smart Dashboard
+The home screen displays personalized insights and quick actions based on user behavior and preferences.
+
+### 3. Seamless Transactions
+We redesigned the transaction flow to minimize steps while maintaining security, using biometric authentication and smart form filling.
+
+### 4. Visual Hierarchy
+Clear typography, strategic use of color, and generous white space guide users through complex financial information.
+
+## Key Features
+
+- **Quick Balance View**: Glanceable account information with privacy controls
+- **Smart Notifications**: Contextual alerts for important account activities
+- **Bill Pay**: Streamlined bill payment with saved payees and recurring payments
+- **Spending Insights**: Visual analytics showing spending patterns and trends
+- **Card Management**: Easy card controls including freeze, limits, and replacement
+
+## Design Process
+
+1. **Research**: Conducted user interviews and competitive analysis
+2. **Wireframing**: Created low-fidelity wireframes to explore layouts
+3. **Prototyping**: Built interactive prototypes for user testing
+4. **Testing**: Ran usability tests with 20+ participants
+5. **Iteration**: Refined design based on feedback
+6. **Handoff**: Created detailed design specifications for development
+
+## Results
+
+- 40% increase in user engagement
+- 60% reduction in support tickets
+- 4.8/5 app store rating
+- Featured in App Store "Apps We Love"
+
+## Technologies
+
+- Figma for design and prototyping
+- Principle for micro-interactions
+- Zeplin for developer handoff
+- Maze for remote user testing
