@@ -1,6 +1,7 @@
 <script lang="ts">
 	import "../styles/app.css";
 	import "../styles/article-styles.css";
+	import { base } from "$app/paths";
 
 	let { children } = $props();
 </script>
@@ -10,24 +11,24 @@
 		<div class="container mx-auto px-6 py-4">
 			<div class="flex items-center justify-between">
 				<a
-					href="/"
+					href="{base}/"
 					class="text-2xl font-display font-bold gradient-text"
 				>
 					VLad Fedorenko
 				</a>
 				<div class="flex gap-8">
 					<a
-						href="/"
+						href="{base}/"
 						class="text-slate-300 hover:text-white transition-colors"
 						>About</a
 					>
 					<a
-						href="/#projects"
+						href="{base}/#projects"
 						class="text-slate-300 hover:text-white transition-colors"
 						>Projects</a
 					>
 					<a
-						href="/#contact"
+						href="{base}/#contact"
 						class="text-slate-300 hover:text-white transition-colors"
 						>Contact</a
 					>

@@ -34,14 +34,7 @@ export const projects: Project[] = [
         featured: true,
         image: '/projects/fitness.jpg'
     },
-    {
-        id: 'new-project',
-        title: 'New Project',
-        description: 'Description of the new project',
-        tags: ['New', 'Project', 'New'],
-        featured: true,
-        image: '/projects/new.jpg'
-    }
+
 ];
 
 export function getProject(id: string): Project | undefined {
@@ -52,15 +45,15 @@ export function getNextProject(currentId: string): Project | null {
     const currentIndex = projects.findIndex(p => p.id === currentId);
     if (currentIndex === -1 || currentIndex === projects.length - 1) {
         return projects[0]
-    } else { 
+    } else {
         return projects[currentIndex + 1];
     }
 }
 
 export function getPreviousProject(currentId: string): Project | null {
     const currentIndex = projects.findIndex(p => p.id === currentId);
-    if (currentIndex <= 0) { 
-        return projects[projects.length - 1]; 
+    if (currentIndex <= 0) {
+        return projects[projects.length - 1];
     } else {
         return projects[currentIndex - 1];
 

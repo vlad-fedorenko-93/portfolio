@@ -1,5 +1,6 @@
 <script lang="ts">
     import { projects } from "$lib/projects";
+    import { base } from "$app/paths";
 </script>
 
 <section id="projects" class="container mx-auto px-6 py-20">
@@ -10,7 +11,10 @@
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {#each projects.filter((p) => p.featured) as project}
-            <a href="/projects/{project.id}" class="group card overflow-hidden">
+            <a
+                href="{base}/projects/{project.id}"
+                class="group card overflow-hidden"
+            >
                 <div
                     class="aspect-video bg-gradient-to-br from-primary-900/50 to-accent-900/50 rounded-xl mb-4 overflow-hidden"
                 >

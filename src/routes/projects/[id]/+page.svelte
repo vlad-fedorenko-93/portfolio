@@ -8,6 +8,7 @@
     let Content = $derived(data.content);
     let nextProject = $derived(data.nextProject);
     let previousProject = $derived(data.previousProject);
+    import { base } from "$app/paths";
 </script>
 
 <svelte:head>
@@ -19,7 +20,7 @@
 <section class="container mx-auto px-6 py-20">
     <div class="max-w-4xl mx-auto">
         <a
-            href="/"
+            href="{base}/"
             class="inline-flex items-center text-slate-400 hover:text-white transition-colors mb-8 group"
         >
             <svg
@@ -136,7 +137,10 @@
     <div class="max-w-4xl mx-auto">
         <div class="grid md:grid-cols-2 gap-6">
             {#if previousProject}
-                <a href="/projects/{previousProject.id}" class="card group">
+                <a
+                    href="{base}/projects/{previousProject.id}"
+                    class="card group"
+                >
                     <div class="flex items-center gap-4">
                         <div class="flex-shrink-0">
                             <svg
@@ -171,7 +175,7 @@
 
             {#if nextProject}
                 <a
-                    href="/projects/{nextProject.id}"
+                    href="{base}/projects/{nextProject.id}"
                     class="card group text-right"
                 >
                     <div class="flex items-center gap-4 justify-end">
