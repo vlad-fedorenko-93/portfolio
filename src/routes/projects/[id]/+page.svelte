@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { PageData } from "./$types";
+    import { resolve } from "$app/paths";
 
     let { data }: { data: PageData } = $props();
 
@@ -8,7 +9,6 @@
     let Content = $derived(data.content);
     let nextProject = $derived(data.nextProject);
     let previousProject = $derived(data.previousProject);
-    import { base } from "$app/paths";
 </script>
 
 <svelte:head>
@@ -20,7 +20,7 @@
 <section class="container mx-auto px-6 py-20">
     <div class="max-w-4xl mx-auto">
         <a
-            href="{base}/"
+            href={resolve("/")}
             class="inline-flex items-center text-slate-400 hover:text-white transition-colors mb-8 group"
         >
             <svg
@@ -138,7 +138,7 @@
         <div class="grid md:grid-cols-2 gap-6">
             {#if previousProject}
                 <a
-                    href="{base}/projects/{previousProject.id}"
+                    href={resolve("/projects/[id]", { id: previousProject.id })}
                     class="card group"
                 >
                     <div class="flex items-center gap-4">
@@ -175,7 +175,7 @@
 
             {#if nextProject}
                 <a
-                    href="{base}/projects/{nextProject.id}"
+                    href={resolve("/projects/[id]", { id: nextProject.id })}
                     class="card group text-right"
                 >
                     <div class="flex items-center gap-4 justify-end">

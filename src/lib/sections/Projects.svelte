@@ -1,6 +1,6 @@
 <script lang="ts">
     import { projects } from "$lib/projects";
-    import { base } from "$app/paths";
+    import { resolve } from "$app/paths";
 </script>
 
 <section id="projects" class="container mx-auto px-6 py-20">
@@ -12,7 +12,7 @@
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {#each projects.filter((p) => p.featured) as project}
             <a
-                href="{base}/projects/{project.id}"
+                href={resolve("/projects/[id]", { id: project.id })}
                 class="group card overflow-hidden"
             >
                 <div

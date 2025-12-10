@@ -26,7 +26,10 @@ const config = {
 		}),
 		prerender: {
 			handleHttpError: 'warn'
-		}
+		},
+        paths: {
+            base: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
+        }
 	},
 
 	extensions: ['.svelte', '.md', '.svx']
